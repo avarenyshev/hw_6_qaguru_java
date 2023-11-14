@@ -27,13 +27,20 @@ public class Main {
         System.out.println("Сравнение");
         int annualturnover = 1000000;
         byte accession = 5;
-        if (annualturnover <= 1000000 & accession <= 5);
+        if (annualturnover <= 1000000 & accession <= 5) ;
         System.out.println("Вам присвоен статус Gold");
 
-        if (annualturnover >= 1000000 & accession >= 5);
+        if (annualturnover >= 1000000 & accession >= 5) ;
         System.out.println("Вам недоступен статус Gold");
 
+        System.out.println("Переполнение");
+        byte a1 = 127;
+        short a2 = 32700;
+        float a3 = 1.02f;
 
+
+        System.out.println("Переполнение byte = " + (++a1));
+        System.out.println("Переполнение short = " + (short) (a2 * a3));
 
     }
 }
