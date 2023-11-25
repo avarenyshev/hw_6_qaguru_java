@@ -4,32 +4,53 @@ public class Main {
     public static void main(String[] args) {
         String strToBePrinted = "Hello world!";
 
-        //Целочисленные типы данных
-        byte aByte = 100; //-128 ... 127
-        short aShort = 100; // -32768 ... 32767
+        // Целочисленные типы данных
+        byte aByte = (byte) 100;   //-128 ... 127
+        short aShort = 100; // -32768... 32767
         int aInt = 100;
-        Integer aInteger = null;
-        long aLong = 100;
+        long aLong = 100L;
         // Типы данных с плавающей точкой
         float aFloat = 1.1f;
-        double aDouble = 1.2; //более точно
+        double aDouble = 1.2d;
         // Символьный
         char aChar = '\u0000';
         // Логический
-        boolean aBooleean = false;
+        boolean aBoolean = false;
 
-        //Операторыэ
+
+        // Операторы
         // 1. Присвоение =
-        // Арифметические + - * / %
-        // Логические <> <= >= == !=
+        // Арифметические  + - * / %
+        System.out.println(aByte + aShort);
+        // Логические операторы < > <= >= == !=
+        int age = 64;
+        int staj = 30;
+        String name = "Dima";
 
-        //if // если
-        //else // если нет, то
+        if (age >= 65 && staj >= 10 && name.equals("Дима")) {
+            System.out.println("Пенсия!");
+        } else {
+            System.out.println("Ты слишком молод");
+        }
+        // Операторы && ||
 
-        //Операторы && Несколко условий
+        char sex = 'm';
 
-        //
+        if (sex == 'm') {
+            name = "Dima";
+        } else if (sex == 'w') {
+            name = "Julia";
+        }
 
+        name = (sex == 'm')
+                ? "Dima"
+                : "Julia";
+
+//        class Human {
+//            int myAge = 33;
+//            String myName = "Alex";
+//            boolean isClever = true;
+//        }
 
 
         System.out.println(strToBePrinted);
